@@ -1,4 +1,4 @@
-<section id="presentation">
+<!-- <section id="presentation">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -29,5 +29,19 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+</section> -->
+<section id="presentation">
+    <div class='container-fluid carousel carousel-fade'> 
+        <div class='col-12'>  
+            <ngb-carousel *ngIf="banners">  
+                <ng-template ngbSlide *ngFor="let banner of banners">  
+                    <img [src]="banner.src" [alt]="banner.alt">  
+                    <div class="carousel-caption">  
+                        <h3 style="color: yellow">{{ banner.text }}</h3>  
+                    </div>  
+                </ng-template>  
+            </ngb-carousel>  
+        </div>
     </div>
 </section>

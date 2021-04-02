@@ -1,3 +1,19 @@
-<section id="cardsPresentation">
-    
+<section id="cardsPresentation" class="pb-5 pt-5">
+    <div class='container d-flex flex-row justify-content-center align-items-center'>
+        <div class="col-8">
+            <h2 style="color: #E74C3C">
+                aceitamos diversos cartões
+            </h2>
+        </div>
+        <div class='col-4'>  
+            <ngb-carousel *ngIf="cardsPicArray">
+                <ng-template ngbSlide *ngFor="let card of cardsPicArray" class="card-element">
+                    <img [src]="card.src" [alt]="card.alt" class="card-image">  
+                    <div class="carousel-caption" *ngIf="card.text">  
+                        <h3 style="color: #E74C3C">{{ card.text }}</h3>  
+                    </div>  
+                </ng-template>
+            </ngb-carousel>  
+        </div>
+    </div>
 </section>

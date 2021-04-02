@@ -1,0 +1,39 @@
+[
+    {
+        "src": "../assets/images/cards/cielo.png",
+        "alt": "Cartões Cielo",
+        "text": "",
+        "title": ""
+    },
+    {
+        "src": "../assets/images/cards/ticket_alimentacao.png",
+        "alt": "Ticket Alimentação",
+        "text": "",
+        "title": ""
+    },
+    {
+        "src": "../assets/images/cards/verocard_alimentacao.png",
+        "alt": "Verocard Alimentação",
+        "text": "",
+        "title": ""
+    },
+    {
+        "src": "../assets/images/cards/visa.png",
+        "alt": "Visa",
+        "text": "",
+        "title": ""
+    },
+    {
+        "src": "../assets/images/cards/mastercard.png",
+        "alt": "Master Card",
+        "text": "",
+        "title": ""
+    },
+    {
+        "src": "../assets/images/cards/vr_alimentacao.png",
+        "alt": "VR Alimentação",
+        "text": "",
+        "title": ""
+    }
+    
+]

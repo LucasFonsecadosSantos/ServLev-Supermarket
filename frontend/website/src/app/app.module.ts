@@ -4,12 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { 
+  
   TemplateComponent,
   HeaderComponent,
   FooterComponent
+
 } from './template';
-import { 
-  PresentationComponent 
+import {
+
+  PresentationComponent,
+  TeaserPresentationComponent,
+  ContactComponent,
+  CardsPresentationComponent,
+  LocationComponent
+
 } from './components';
 
 @NgModule({
@@ -18,7 +26,11 @@ import {
     TemplateComponent,
     HeaderComponent,
     FooterComponent,
-    PresentationComponent
+    PresentationComponent,
+    CardsPresentationComponent,
+    ContactComponent,
+    LocationComponent,
+    TeaserPresentationComponent
   ],
   imports: [
     BrowserModule,

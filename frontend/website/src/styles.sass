@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css"
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css")
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+$__COLOR__red-01: #E74C3C
+$__COLOR__green-01: #27AE60
+$__COLOR__gray-01: #757575
+
+h1
+    //background: #FFF
+    font:
+        family: 'Raleway', sans-serif
+        weight: 800
+        size: 3rem
+    text:
+        //shadow: 10px 10px 10px #000
+    color: $__COLOR__red-01
+p
+    font:
+        family: 'Roboto', sans-serif
+        weight: 400
+        size: 1.1rem
+    
+mark
+    background: $__COLOR__red-01
+    color: #FFF
+
+.btn-link
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+    padding: 15px
+    border-radius: 4px
+    cursor: pointer
+    font:
+        family: 'Raleway', sans-serif
+        size: 1rem
+        weight: 800
+    text:
+        transform: uppercase
+        decoration: none
+    &:hover
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    &.default
+        background: $__COLOR__gray-01
+        color: #FFF
+        &:hover
+            background: darken($__COLOR__green-01, 10)
+            transition: all .9s
+            text-decoration: none

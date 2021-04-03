@@ -19,13 +19,15 @@ import {
   TeaserPresentationComponent,
   ContactComponent,
   CardsPresentationComponent,
-  LocationComponent
+  LocationComponent,
+  OfferPresentationComponent
 
 } from './components';
 import {
 
   CardsService,
-  PresentationService
+  PresentationService,
+  OfferService
 
 } from './services';
 
@@ -39,7 +41,8 @@ import {
     CardsPresentationComponent,
     ContactComponent,
     LocationComponent,
-    TeaserPresentationComponent
+    TeaserPresentationComponent,
+    OfferPresentationComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import {
   ],
   providers: [
     CardsService,
-    PresentationService
+    PresentationService,
+    OfferService
   ],
   bootstrap: [AppComponent]
 })

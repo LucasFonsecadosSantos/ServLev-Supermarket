@@ -10,7 +10,7 @@
                 <ng-template ngbSlide *ngFor="let card of cardsPicArray" class="card-element">
                     <img [src]="card.src" [alt]="card.alt" class="card-image">  
                     <div class="carousel-caption" *ngIf="card.text">  
-                        <h3 style="color: #E74C3C">{{ card.text }}</h3>  
+                        <h3 class="text-orange-01">{{ card.text }}</h3>  
                     </div>  
                 </ng-template>
             </ngb-carousel>  

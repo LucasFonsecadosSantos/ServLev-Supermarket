@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { OfferService } from 'src/app/services';
+
+import { Image } from './../../models/image';
 
 @Component({
   selector: 'app-offer-presentation',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferPresentationComponent implements OnInit {
 
-  constructor() { }
+  public offers: Image[];
+
+  constructor(
+    private offersService: OfferService
+  ) {
+    this.offers = [];
+  }
 
   ngOnInit(): void {
+    this.offers = this.offersService.all();
   }
 
 }

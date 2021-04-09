@@ -1,1 +1,14 @@
-<p>offer-presentation works!</p>
+<section id="offer_presentation" class="pb-5 pt-5">
+    <div class='container-fluid carousel carousel-fade'> 
+        <div class='col-12'>  
+            <ngb-carousel *ngIf="offers">  
+                <ng-template ngbSlide *ngFor="let offer of offers">  
+                    <img [src]="offer.src" [alt]="offer.alt">  
+                    <div class="carousel-caption">  
+                        <h3 style="color: yellow">{{ offer.text }}</h3>  
+                    </div>  
+                </ng-template>  
+            </ngb-carousel>  
+        </div>
+    </div>
+</section>
